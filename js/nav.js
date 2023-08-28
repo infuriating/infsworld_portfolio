@@ -6,16 +6,22 @@ const NavPages = {
 };
 
 const url = window.location.href;
-const urlSplit = url.substring(url.lastIndexOf("/") + 1);
+const urlSplit = url.split("/");
+const urlString = `/${urlSplit[3]}`;
 
 function setActivePage() {
   const navLinks = document.querySelectorAll(".nav-link");
+  Object.keys(NavPages).forEach((key) => {
+    if (urlString === NavPages[key]) {
+      document.title = `infs.world | ${key}`;
+    }
+  });
+
   navLinks.forEach((link) => {
-    if (link.getAttribute("href") === NavPages[url]) {
+    if (urlString === NavPages[url]) {
       link.classList.add("nav-active");
     }
   });
-  console.log(`Page: ${url}`);
 }
 
 function loadNav() {

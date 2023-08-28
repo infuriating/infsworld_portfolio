@@ -1,0 +1,16 @@
+.nav-container {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-logo_image {
+  width: 200px;
+  position: absolute;
+  top: 0rem;
+}

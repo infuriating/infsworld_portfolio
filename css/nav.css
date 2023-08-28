@@ -11,6 +11,11 @@ nav .nav-links a {
   opacity: 0.5;
 }
 
+nav .nav-links a:hover {
+  opacity: 1;
+  transition: 0.35s all;
+}
+
 .nav-logo_image {
   width: 200px;
   position: absolute;

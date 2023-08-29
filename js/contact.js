@@ -43,7 +43,7 @@ function handleSubmit(e) {
             value: FormData.medium,
           },
           {
-            name: "📸 Phone Number",
+            name: "📞 Phone Number",
             value: FormData.medium,
           },
           {

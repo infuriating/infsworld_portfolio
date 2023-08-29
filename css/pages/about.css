@@ -1,0 +1,43 @@
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 1rem;
+}
+
+.tools > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tools > div > p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.tools > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tools > div > div > img {
+  width: 48px;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 728px) {
+  .tools {
+    grid-template-columns: 1fr;
+  }
+  .tools {
+    gap: 1.75rem;
+  }
+  .tools > div > p {
+    font-size: 1.25rem;
+  }
+}

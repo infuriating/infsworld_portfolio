@@ -11,21 +11,33 @@ const urlString = `/${urlSplit[3]}`;
 
 function setActivePage() {
   const navLinks = document.querySelectorAll(".nav-link");
+
   Object.keys(NavPages).forEach((key) => {
     if (urlString === NavPages[key]) {
       document.title = `infs.world | ${key}`;
+      navLinks.forEach((link) => {
+        if (link.textContent === key.charAt(0).toUpperCase() + key.slice(1)) {
+          link.classList.add("nav-active");
+        }
+      }, key);
     }
   });
 
-  navLinks.forEach((link) => {
-    if (urlString === NavPages[url]) {
-      link.classList.add("nav-active");
-    }
-  });
+  // navLinks.forEach((link) => {
+  //   if (urlString === NavPages[url]) {
+  //     link.classList.add("nav-active");
+  //   }
+  // });
 }
 
 function loadNav() {
   const nav = document.querySelector("nav");
+  // add this at last
+  // <div class="nav-menu">
+  //   <div class="nav-menu_line"></div>
+  //   <div class="nav-menu_line"></div>
+  //   <div class="nav-menu_line"></div>
+  // </div>
   nav.innerHTML = `
     <div class="nav-container">
       <div class="nav-logo">

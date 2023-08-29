@@ -19,7 +19,7 @@ form {
 .form_item textarea {
   padding: 0.5rem;
   border-radius: 0.25rem;
-  border: 2px solid rgb(var(--foreground-rgb));
+  border: 1px solid rgb(var(--foreground-rgb));
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
@@ -27,7 +27,7 @@ form {
 .form_item input:focus,
 .form_item textarea:focus {
   outline: none;
-  border: 2px solid #3b82f6;
+  border: 1px solid #3b82f6;
   transition: all 0.35s ease-in-out;
 }
 
@@ -38,6 +38,7 @@ button {
   padding: 0.5rem;
   border-radius: 0.25rem;
   background: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-start-rgb));
   font-size: 1rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;

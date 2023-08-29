@@ -76,6 +76,7 @@ const Tools = {
 const Projects = [
   {
     name: "Tropical Boat Party",
+    image: "../media/images/projects/tropicalboatparty.png",
     description:
       "Tropical Boat Party is a website that I made for my college, Grafisch Lyceum Rotterdam. For this project I worked on both the front and back-end of the site. What I've learned from this project is how to work with the Stripe API in combination with Firebase.",
     technologies: [
@@ -107,6 +108,7 @@ const Projects = [
   },
   {
     name: "fear no sins",
+    image: "../media/images/projects/fearnosins.png",
     description:
       "fear no sins is a multi-media agency / friend group that I'm a part of. On this website we showcase our work and give people the opportunity to contact us for any inquiries regarding video editing, graphic design or any other type of creative work.",
     technologies: [

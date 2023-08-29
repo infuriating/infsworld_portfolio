@@ -7,9 +7,30 @@
 .project {
   display: flex;
   flex-direction: column;
+  background-color: var(--primary-rgb);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 800px;
 }
 
-.project > div > div > img {
+.project_image {
+  overflow: hidden;
+}
+
+.project-image img {
+  height: 250px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  filter: blur(3px) saturate(0);
+  transition: all 250ms ease-in-out;
+  object-fit: cover;
+}
+
+.project-image img:hover {
+  filter: blur(0) saturate(1);
+}
+
+.project-technologies_images img {
   width: 48px;
   aspect-ratio: 1/1;
 }

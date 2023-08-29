@@ -23,6 +23,7 @@
             name="name"
             placeholder="Your name"
             minlength="4"
+            onkeydown="reactiveFormData('name')"
             required
           />
         </div>
@@ -34,11 +35,12 @@
             name="medium"
             placeholder="Your medium"
             minlength="4"
+            onkeydown="reactiveFormData('medium')"
             required
           />
         </div>
         <div class="form_item">
-          <label for="phone">Phone</label>
+          <label for="phone">Phone number</label>
           <input
             type="text"
             id="phone"
@@ -46,24 +48,26 @@
             placeholder="Your phone number"
             minlength="8"
             maxlength="24"
+            onkeydown="reactiveFormData('phone')"
             required
           />
         </div>
         <div class="form_item">
-          <label for="message">Subject</label>
-          <textarea
+          <label for="message">Message</label>
+          <input
             id="message"
             name="message"
             placeholder="Write your inquiry here"
             minlength="40"
+            onkeydown="reactiveFormData('message')"
             required
-          ></textarea>
+          ></input>
         </div>
         <button type="submit">Submit</button>
       </form>
     </div>
     <script src="../js/nav.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="module" src="../js/contact.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

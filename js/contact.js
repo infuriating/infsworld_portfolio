@@ -14,18 +14,18 @@ const FormData = {
 const form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
+function reactiveFormData(type) {
+  const input = document.querySelector(`#${type}`);
+  input.addEventListener("input", () => {
+    FormData[type] = input.value;
+  });
+  setTimeout(() => {
+    console.table(FormData);
+  }, 50);
+}
+
 function handleSubmit(e) {
   e.preventDefault();
-
-  const name = document.querySelector("#name").value;
-  const medium = document.querySelector("#medium").value;
-  const phone = document.querySelector("#phone").value;
-  const message = document.querySelector("#message").value;
-
-  FormData.name = name;
-  FormData.medium = medium;
-  FormData.phone = phone;
-  FormData.message = message;
 
   if (!formSubmitted) {
     axiosSubmit();

@@ -27,9 +27,6 @@ function handleSubmit(e) {
   FormData.phone = phone;
   FormData.message = message;
 
-  console.log("Form submitted");
-  console.table(FormData);
-
   if (!formSubmitted) {
     axiosSubmit();
     formSubmitted = true;

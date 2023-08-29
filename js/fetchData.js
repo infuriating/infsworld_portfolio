@@ -72,3 +72,60 @@ const Tools = {
     },
   ],
 };
+
+const Projects = [
+  {
+    name: "Tropical Boat Party",
+    description:
+      "Tropical Boat Party is a website that I made for my college, Grafisch Lyceum Rotterdam. For this project I worked on both the front and back-end of the site. What I've learned from this project is how to work with the Stripe API in combination with Firebase.",
+    technologies: [
+      {
+        name: "HTML",
+        icon: Tools.Technologies[0].icon,
+      },
+      {
+        name: "CSS",
+        icon: Tools.Technologies[1].icon,
+      },
+      {
+        name: "JavaScript",
+        icon: Tools.Technologies[2].icon,
+      },
+      {
+        name: "Node",
+        icon: Tools.Technologies[5].icon,
+      },
+      {
+        name: "Firebase",
+        icon: Tools.Databases[1].icon,
+      },
+      {
+        name: "Stripe",
+        icon: Tools.Libraries[2].icon,
+      },
+    ],
+  },
+  {
+    name: "fear no sins",
+    description:
+      "fear no sins is a multi-media agency / friend group that I'm a part of. On this website we showcase our work and give people the opportunity to contact us for any inquiries regarding video editing, graphic design or any other type of creative work.",
+    technologies: [
+      {
+        name: "Next",
+        icon: Tools.Frameworks[1].icon,
+      },
+      {
+        name: "React",
+        icon: Tools.Frameworks[0].icon,
+      },
+      {
+        name: "TailwindCSS",
+        icon: Tools.Libraries[0].icon,
+      },
+      {
+        name: "Axios",
+        icon: Tools.Libraries[3].icon,
+      },
+    ],
+  },
+];

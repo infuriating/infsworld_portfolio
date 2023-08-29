@@ -1,14 +1,22 @@
-.project-container_project {
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
 }
 
-.project-container_project-image {
+.project {
+  display: flex;
+  flex-direction: column;
 }
 
-.project-container_project-information {
+.project > div > div > img {
+  width: 48px;
+  aspect-ratio: 1/1;
 }
 
-.project-container_project-information-title {
-}
-
-.project-container_project-information-description {
+.project-technologies {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  gap: 0.2rem;
 }

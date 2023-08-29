@@ -19,9 +19,6 @@ function reactiveFormData(type) {
   input.addEventListener("input", () => {
     FormData[type] = input.value;
   });
-  setTimeout(() => {
-    console.table(FormData);
-  }, 50);
 }
 
 function handleSubmit(e) {

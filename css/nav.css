@@ -1,19 +1,28 @@
+:root {
+  --not-active: rgb(128, 128, 128);
+}
+
 nav {
   background-color: white;
   height: 80px;
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--border-rgb);
+  margin-bottom: 2rem;
 }
 
 nav .nav-links a {
-  color: rgb(var(--foreground-rgb));
+  color: var(--not-active);
   font-weight: 700;
-  opacity: 0.5;
 }
 
 nav .nav-links a:hover {
-  opacity: 1;
-  transition: 0.35s all;
+  color: white;
+  transition: 0.35s all ease-in-out;
+}
+
+nav .nav-links a.nav-active {
+  color: rgb(var(--foreground-rgb));
 }
 
 .nav-logo_image {
@@ -23,8 +32,40 @@ nav .nav-links a:hover {
   filter: invert(1);
 }
 
-.nav-active {
-  filter: opacity(1);
+.nav-menu {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  width: 40px;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  aspect-ratio: 1/1;
+  background: rgb(var(--foreground-rgb));
+}
+
+.nav-container {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/* mobile */
+@media (max-width: 524px) {
+  .nav-logo_image {
+    width: 175px;
+    top: 0.4rem;
+  }
+  .nav-links {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,14 +76,4 @@ nav .nav-links a:hover {
   .nav-logo_image {
     filter: invert(0);
   }
-}
-.nav-container {
-  display: flex;
-  padding: 2rem;
-  justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.25rem;
 }

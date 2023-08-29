@@ -4,6 +4,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-rgb: rgb(244, 244, 244);
+  --border-rgb: rgb(128, 128, 128);
 }
 
 * {
@@ -17,6 +19,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 21, 21, 21;
     --background-end-rgb: 14, 14, 14;
+    --primary-rgb: rgb(7, 7, 7);
   }
 }
 
@@ -35,4 +38,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.page-container {
+  width: 95%;
+  margin-left: 2.5%;
 }

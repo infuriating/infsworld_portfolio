@@ -9,7 +9,7 @@ import { MobileNavPages, NavPages } from "@/lib/LocalFetch";
 
 export default function Nav() {
   const pathname = usePathname();
-  const [mobileMenu, setMobileMenu] = React.useState(true);
+  const [mobileMenu, setMobileMenu] = React.useState(false);
 
   function handleMobileMenu() {
     setMobileMenu(!mobileMenu);

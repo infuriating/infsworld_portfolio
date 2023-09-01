@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import "./globals.css";
 import type { Metadata } from "next";
+import PageContainer from "@/components/PageContainer";
 
 export const metadata: Metadata = {
   title: "infs.world",
@@ -17,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Nav />
-        {children}
+        <PageContainer>{children}</PageContainer>
       </body>
     </html>
   );

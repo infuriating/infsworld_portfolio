@@ -4,7 +4,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <PageContainer>
+    <>
       <p className="text-4xl font-bold">Hey!</p>
       <p className="text-lg mt-2 mb-1 font-medium">
         My name is <b>Luca Kuiper</b>, also known as inf, or infuriating, or
@@ -15,6 +15,6 @@ export default function page() {
         who also loves to design stuff in his free time.
       </p>
       <Tool />
-    </PageContainer>
+    </>
   );
 }

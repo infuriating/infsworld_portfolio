@@ -4,8 +4,8 @@ import React, { useState } from "react";
 
 export default function page() {
   return (
-    <PageContainer>
+    <>
       <ContactToggle />
-    </PageContainer>
+    </>
   );
 }

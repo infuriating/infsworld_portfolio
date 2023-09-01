@@ -21,9 +21,9 @@ export default function Nav() {
     <>
       {mobileMenu && (
         <>
-          <div className="fixed top-0 left-0 w-screen h-screen bg-primary opacity-70 z-50"></div>
-          <div className="fixed flex flex-col justify-center items-center w-full h-full z-[52]">
-            <div className="bg-primary py-4 gap-1 px-4 flex flex-col justify-start w-[240px] rounded-md drop-shadow-xl">
+          <div className="animate-backdropOpacityIn forwards fixed top-0 left-0 w-screen h-screen bg-primary opacity-70 z-50"></div>
+          <div className="animate-opacityIn fixed flex flex-col justify-center items-center w-full h-full z-[52]">
+            <div className="bg-primary py-4 gap-1 px-4 flex flex-col justify-start w-[240px] rounded-xl drop-shadow-xl">
               {MobileNavPages.map((link) => (
                 <Link href={link.href} key={link.href} passHref>
                   <div
@@ -62,7 +62,7 @@ export default function Nav() {
         </Link>
         <div className="md:hidden flex items-center justify-end w-full px-8">
           <button
-            className="text-black bg-white w-[40px] aspect-square rounded-lg text-2xl"
+            className="text-black font-semibold bg-white w-[40px] aspect-square rounded-lg text-2xl"
             onClick={handleMobileMenu}
             aria-label="Open Mobile Menu"
           >

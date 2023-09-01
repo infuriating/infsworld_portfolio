@@ -24,7 +24,8 @@ const config: Config = {
         poppins: ["Poppins", "sans-serif"],
       },
       animation: {
-        opacityIn: "opacityIn 0.5s ease-in-out",
+        opacityIn: "opacityIn 0.5s ease-in-out forwards",
+        backdropOpacityIn: "backdropOpacityIn 0.5s ease-in-out forwards",
       },
       keyframes: {
         opacityIn: {
@@ -32,6 +33,12 @@ const config: Config = {
           "0%": { opacity: 0 },
           // @ts-ignore
           "100%": { opacity: 1 },
+        },
+        backdropOpacityIn: {
+          // @ts-ignore
+          "0%": { opacity: 0 },
+          // @ts-ignore
+          "100%": { opacity: 0.7 },
         },
       },
     },

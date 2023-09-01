@@ -1,11 +1,11 @@
-import Form from "@/components/contact/Form";
 import PageContainer from "@/components/PageContainer";
-import React from "react";
+import ContactToggle from "@/components/contact/ContactToggle";
+import React, { useState } from "react";
 
 export default function page() {
   return (
     <PageContainer>
-      <Form />
+      <ContactToggle />
     </PageContainer>
   );
 }

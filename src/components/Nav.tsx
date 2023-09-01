@@ -14,42 +14,44 @@ export default function Nav() {
   function handleMobileMenu() {
     setMobileMenu(!mobileMenu);
 
-    if (mobileMenu) {
-      setMobileMenu(false);
-    }
+    if (mobileMenu) setMobileMenu(false);
   }
 
   return (
     <>
       {mobileMenu && (
         <>
-          <div className="fixed top-0 left-0 w-full h-full bg-primary opacity-50 z-50"></div>
+          <div className="fixed top-0 left-0 w-screen h-screen bg-primary opacity-70 z-50"></div>
           <div className="fixed flex flex-col justify-center items-center w-full h-full z-[52]">
-            <div className="bg-primary py-4 pr-16 pl-4 flex flex-col justify-start w-max rounded-md drop-shadow-xl">
+            <div className="bg-primary py-4 gap-1 px-4 flex flex-col justify-start w-[240px] rounded-md drop-shadow-xl">
               {MobileNavPages.map((link) => (
                 <Link href={link.href} key={link.href} passHref>
                   <div
-                    className={`group flex text-xl items-center font-semibold transition-all duration-300 hover:font-semibold hover:text-white hover:opacity-80 ${
-                      pathname === link.href ? "" : "text-not-active"
+                    className={`w-max tracking-wide group ml-[60px] flex text-xl items-center font-semibold transition-all duration-300 hover:font-semibold hover:text-white hover:opacity-80 ${
+                      pathname === link.href
+                        ? "bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent"
+                        : "text-not-active"
                     }`}
                   >
                     <p>{link.text}</p>
                   </div>
                 </Link>
               ))}
-              <button
-                className="py-2 px-6 bg-red-400 font-bold rounded-lg mt-4"
-                onClick={handleMobileMenu}
-              >
-                Close
-              </button>
+              <div className="flex w-full justify-center">
+                <button
+                  className="py-2 px-10 text-lg bg-red-400 font-bold rounded-lg mt-4"
+                  onClick={handleMobileMenu}
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </>
       )}
       <div className="font-poppins flex h-20 bg-primary w-full">
         <Link href="/">
-          <div className="absolute md:ml-8 items-center justify-center">
+          <div className="absolute top-1 md:ml-8 items-center justify-center">
             <Image
               src="/images/infsworld.png"
               alt="infs.world"
@@ -72,7 +74,9 @@ export default function Nav() {
             <Link href={link.href} key={link.href} passHref>
               <div
                 className={`group flex items-center font-semibold transition-all duration-300 hover:font-semibold hover:text-white hover:opacity-80 ${
-                  pathname === link.href ? "" : "text-not-active"
+                  pathname === link.href
+                    ? "bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent"
+                    : "text-not-active"
                 }`}
               >
                 <p>{link.text}</p>

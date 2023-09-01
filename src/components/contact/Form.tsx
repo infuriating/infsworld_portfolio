@@ -64,12 +64,9 @@ export default function ContactEmbedded() {
 
     function axiosSubmit() {
       // @ts-ignore
-      axios.post(
-        "https://discord.com/api/webhooks/1146712820822581280/yGuDCVFNwPkJ-5NtNRxolr_FEu8B8mvuo4X2vOyR4kGmRB8tM_VezRPUCV_HwsNnBkRp",
-        {
-          embeds,
-        }
-      );
+      axios.post(process.env.WEBHOOK_URL, {
+        embeds,
+      });
     }
   }
 

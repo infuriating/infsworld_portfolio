@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "infuriating's portfolio site",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function RootLayout({
   children,
 }: {

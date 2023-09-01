@@ -10,7 +10,7 @@ export default function PageContainer({ children }: PageContainerProps) {
   return (
     <>
       <Nav />
-      <div className="w-[95%] ml-[2.5%] font-poppins">{children}</div>
+      <div className="w-[95%] ml-[2.5%] font-poppins mb-20">{children}</div>
       <Footer />
     </>
   );

@@ -7,7 +7,8 @@ const time = new Date().getFullYear();
 export default function Footer() {
   return (
     <div className="absolute h-screen">
-      <div className="fixed text-sm font-semibold text-white items-center bottom-0 w-full bg-primary flex justify-between h-16">
+      <div className="fixed z-[2] text-sm font-semibold text-white items-center bottom-0 w-full bg-gradient-to-r from-cyan-500 to-fuchsia-500 blur-2xl flex justify-between h-16"></div>
+      <div className="fixed z-[3] text-sm font-semibold text-white items-center bottom-0 w-full bg-primary flex justify-between h-16">
         <p className="m-16">
           &copy; {time}{" "}
           <Link

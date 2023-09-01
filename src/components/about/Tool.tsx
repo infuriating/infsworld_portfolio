@@ -21,7 +21,7 @@ export default function Tool() {
       </button>
       {carouselOpened && (
         <div
-          className={`grid p-4 w-[80%] ml-[10%] transition-all rounded-b-xl bg-primary gap-6 grid-cols-1 lg:grid-cols-2 place-items-center`}
+          className={`animate-opacityIn grid p-4 w-[80%] ml-[10%] transition-all rounded-b-xl bg-primary gap-6 grid-cols-1 lg:grid-cols-2 place-items-center`}
         >
           <div className="flex flex-col">
             <p className="text-xl font-bold text-center mb-2">Technologies</p>

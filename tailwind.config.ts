@@ -23,6 +23,17 @@ const config: Config = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      animation: {
+        opacityIn: "opacityIn 0.5s ease-in-out",
+      },
+      keyframes: {
+        opacityIn: {
+          // @ts-ignore
+          "0%": { opacity: 0 },
+          // @ts-ignore
+          "100%": { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],

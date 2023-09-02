@@ -10,7 +10,9 @@ export default function Socials() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="mb-4 flex flex-col items-center justify-center">
-        <p className="mb-4 text-6xl font-bold">Contact me!</p>
+        <p className="mb-4 text-5xl text-center font-bold md:text-6xl">
+          Contact me!
+        </p>
         <p className="text-md w-[85%] text-center md:w-[52%]">
           I&apos;m always open to new opportunities, so if you&apos;re
           interested in working with me, feel free to send me a message!

@@ -9,7 +9,7 @@ export default function Footer() {
     <div className="absolute h-screen">
       <div className="fixed z-[2] text-sm font-semibold text-white items-center bottom-0 w-full bg-gradient-to-r from-cyan-500 to-fuchsia-500 blur-2xl flex justify-between h-16"></div>
       <div className="fixed z-[3] text-sm font-semibold text-white items-center bottom-0 w-full bg-primary flex justify-between h-16">
-        <p className="m-16">
+        <p className="ml-6 md:ml-16">
           &copy; {time}{" "}
           <Link
             className="bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent"
@@ -29,7 +29,7 @@ export default function Footer() {
           </Link>
         </div>
         <Link href={"#"}>
-          <p className="m-16">linktree</p>
+          <p className="mr-6 md:mr-16">linktree</p>
         </Link>
       </div>
     </div>

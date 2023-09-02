@@ -27,7 +27,7 @@ export default async function Index() {
             src={`/images/projects/${project.image}.png`}
             alt={project.title}
             width={500}
-            height={300}
+            height={200}
           />
           <p className="font-bold text-2xl py-1">{project.title}</p>
           <p>{project.information}</p>

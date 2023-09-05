@@ -17,7 +17,7 @@ export default async function Index() {
       {projects?.map((project) => (
         <div
           key={project.id}
-          className="bg-primary px-8 py-4 flex flex-col gap-2 justify-center max-w-3xl rounded-lg relative"
+          className="bg-primary w-full h-full px-8 py-4 flex flex-col gap-2 justify-center max-w-3xl rounded-lg relative"
         >
           <div className="absolute bg-neutral-900 w-full h-full blur-2xl left-0 top-0 -z-10"></div>
           <p className="text-neutral-400 text-sm">

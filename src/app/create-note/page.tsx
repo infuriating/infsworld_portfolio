@@ -2,6 +2,7 @@
 
 import React from "react";
 import { createClient } from "@supabase/supabase-js";
+import Link from "next/link";
 
 export default async function page() {
   const supabase = createClient(
@@ -20,17 +21,19 @@ export default async function page() {
       .from("notes")
       .insert([{ name: formName, note: formNote }]);
 
-    location.href = "/note";
+    setTimeout(() => {
+      window.location.href = "/note";
+    }, 1000);
   }
 
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="h-container-svh flex justify-center items-center">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <label htmlFor="name">Name</label>
             <input
-              className="px-4 text-black py-2 rounded-lg w-[800px]"
+              className="mt-1 h-10 rounded-lg border-b-2 border-gray-500 bg-gray-700 bg-opacity-20 px-2 py-2 transition-all duration-500 ease-in-out focus:border-blue-500 focus:outline-none w-[80vw] md:w-[700px]"
               type="text"
               name="name"
               id="name"
@@ -40,7 +43,7 @@ export default async function page() {
           <div className="flex flex-col gap-2">
             <label htmlFor="note">Note</label>
             <textarea
-              className="px-4 text-black py-2 rounded-lg w-[800px]"
+              className="mt-1 rounded-lg border-b-2 border-gray-500 bg-gray-700 bg-opacity-20 px-2 py-2 transition-all duration-500 ease-in-out focus:border-blue-500 focus:outline-none w-[80vw] md:w-[700px]"
               name="note"
               id="note"
               required
@@ -48,13 +51,18 @@ export default async function page() {
               rows={4}
             ></textarea>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex gap-2 justify-center items-center">
             <button
               className="font-semibold text-black rounded-md px-6 py-2 bg-white hover:bg-neutral-300 transition-all duration-200"
               type="submit"
             >
               Submit
             </button>
+            <Link href={"/note"}>
+              <p className="font-semibold text-white rounded-md px-6 py-2 bg-red-700 hover:bg-red-500 transition-all duration-200">
+                Cancel
+              </p>
+            </Link>
           </div>
         </form>
       </div>

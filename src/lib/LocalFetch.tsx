@@ -90,6 +90,10 @@ export const Tools = {
       name: "Axios",
       icon: "../media/images/tools/axios.png",
     },
+    {
+      name: "web3.js",
+      icon: "../media/images/tools/web3js.png",
+    },
   ],
   Databases: [
     {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function page() {
+  const secretMessage = "{ secret page }";
   return (
     <>
       <div className="w-full md:w-1/2">
@@ -20,7 +21,7 @@ export default function page() {
       <Tool />
       <Link href="/note">
         <p className="text-center mt-8 opacity-10 hover:opacity-100 transition-all duration-300">
-          Note something down
+          {secretMessage}
         </p>
       </Link>
     </>

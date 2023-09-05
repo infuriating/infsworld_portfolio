@@ -91,7 +91,7 @@ export const Tools = {
       icon: "../media/images/tools/axios.png",
     },
     {
-      name: "web3.js",
+      name: "web3js",
       icon: "../media/images/tools/web3js.png",
     },
   ],

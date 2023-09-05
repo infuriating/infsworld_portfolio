@@ -14,8 +14,8 @@ export default async function page() {
     <>
       <div className="flex justify-center items-center">
         <Link href={"/create-note"}>
-          <p className="bg-primary px-6 py-2 rounded-lg w-max text-center font-medium mb-6 text-xl transition-all duration-300 hover:bg-neutral-800">
-            Create a note
+          <p className="bg-white text-black px-6 py-2 rounded-lg w-max text-center font-medium mb-6 text-xl transition-all duration-300 hover:bg-neutral-200">
+            Post a note
           </p>
         </Link>
       </div>
@@ -29,11 +29,17 @@ export default async function page() {
             <p className="text-neutral-400 text-xs">
               {note.created_at.substring(0, 10)}
               <span className="font-bold">{" - "}</span>
-              {note.created_at.substring(11, 19)}
+              <span className="text-neutral-300 font-medium">
+                {note.created_at.substring(11, 19)}
+              </span>
+              <span className="md:hidden">
+                {" "}
+                <span className="font-bold">{" - "}</span>
+                by <span className="font-bold text-white">{note.name}</span>
+              </span>
             </p>
-            <div className="flex items-center gap-x-1">
-              <p className="text-neutral-500 text-xs">note from </p>
-
+            <div className="md:flex hidden items-center gap-x-1">
+              <p className="text-neutral-500 text-xs">note from</p>
               <p className="font-bold text-xl text-white">{note.name}</p>
             </div>
             <p className="text-sm">{note.note}</p>

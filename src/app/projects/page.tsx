@@ -8,6 +8,8 @@ export default async function Index() {
   const supabase = createServerComponentClient({ cookies });
   const { data: projects } = await supabase.from("projects").select("*");
 
+  projects?.sort((a, b) => a.id - b.id);
+
   // columns: id, date (timestamp), title, description, image (name but lowercase), tools (text[])
 
   return (

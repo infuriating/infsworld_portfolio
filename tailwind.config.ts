@@ -23,6 +23,9 @@ const config: Config = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      height: {
+        "container-svh": "calc(100svh - 300px)",
+      },
       animation: {
         opacityIn: "opacityIn 0.5s ease-in-out forwards",
         backdropOpacityIn: "backdropOpacityIn 0.5s ease-in-out forwards",

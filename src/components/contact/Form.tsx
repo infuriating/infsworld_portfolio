@@ -74,7 +74,7 @@ export default function ContactEmbedded() {
   }
 
   return (
-    <div className="flex flex-col w-[60%] ml-[20%]">
+    <div className="h-container-svh flex flex-col w-[60%] ml-[20%]">
       {submitted && submittedInfo != null ? (
         <p className="text-2xl">
           Thanks for your submission,{" "}

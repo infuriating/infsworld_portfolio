@@ -8,7 +8,7 @@ export default function Socials() {
     setCopied("My discord username has been copied to your clipboard!");
   }
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="h-container-svh flex flex-col justify-center items-center">
       <div className="mb-4 flex flex-col items-center justify-center">
         <p className="mb-4 text-5xl text-center font-bold md:text-6xl">
           Contact me!

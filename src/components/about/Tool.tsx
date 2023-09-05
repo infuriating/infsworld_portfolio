@@ -10,8 +10,7 @@ export default function Tool() {
   return (
     <>
       <p className="text-2xl font-semibold mt-8 text-center">
-        Here you can see some of some of the tools that I currently use, and/or
-        are familiar with.
+        Here you can see the tools that I currently use, or am familiar with.
       </p>
       <button
         className="w-[80%] ml-[10%]  font-bold text-xl bg-primary py-2 rounded-t-xl mt-4"

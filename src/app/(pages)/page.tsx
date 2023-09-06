@@ -37,13 +37,13 @@ export default function Home() {
         <div className="flex gap-4 justify-center items-center mt-4">
           <Link
             href="/about"
-            className="font-semibold bg-blue-400 px-8 py-2 rounded-lg text-neutral-100 transition-all duration-200 hover:bg-blue-500"
+            className="font-semibold bg-cyan-500 px-8 py-2 rounded-lg text-neutral-100 transition-all duration-200 hover:bg-cyan-700"
           >
             About me
           </Link>
           <Link
             href="/projects"
-            className="font-semibold bg-red-300 px-8 py-2 rounded-lg transition-all duration-200 hover:bg-red-400"
+            className="font-semibold bg-fuchsia-500 px-8 py-2 rounded-lg transition-all duration-200 hover:bg-fuchsia-800"
           >
             Projects
           </Link>

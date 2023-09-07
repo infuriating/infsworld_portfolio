@@ -28,7 +28,7 @@ export default function Footer() {
             ></Image>
           </Link>
         </div>
-        <Link href={"#"}>
+        <Link href={"https://linktr.ee/infuriating"}>
           <p className="mr-6 md:mr-16">linktree</p>
         </Link>
       </div>

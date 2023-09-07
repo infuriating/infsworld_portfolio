@@ -26,6 +26,10 @@ const config: Config = {
       height: {
         "container-svh": "calc(100svh - 300px)",
       },
+      gridTemplateColumns: {
+        "about-md": "57.5% 1fr",
+        "about-lg": "65% 1fr",
+      },
       animation: {
         opacityIn: "opacityIn 0.5s ease-in-out forwards",
         backdropOpacityIn: "backdropOpacityIn 0.5s ease-in-out forwards",

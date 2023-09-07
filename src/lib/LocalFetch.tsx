@@ -169,3 +169,14 @@ export const Projects = [
     ],
   },
 ];
+
+export const slideshowImages = [
+  "/images/uglydog/lucky-1.jpg",
+  "/images/uglydog/lucky-2.jpg",
+  "/images/uglydog/lucky-3.jpg",
+  "/images/uglydog/lucky-4.jpg",
+  "/images/uglydog/lucky-5.jpg",
+  "/images/uglydog/lucky-6.jpg",
+  "/images/uglydog/lucky-7.jpg",
+  "/images/uglydog/lucky-8.jpg",
+];

@@ -13,7 +13,7 @@ export default async function Index() {
   // columns: id, date (timestamp), title, description, image (name but lowercase), tools (text[])
 
   return (
-    <div className="grid grid-cols-1 gap-4 xl:grid-cols-2 place-items-center font-poppins">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 2xl:grid-cols-3 place-items-center font-poppins">
       {projects?.map((project) => (
         <div
           key={project.id}

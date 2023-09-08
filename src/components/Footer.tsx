@@ -19,7 +19,7 @@ export default function Footer() {
           </Link>
         </p>
         <div className="flex">
-          <Link href={"https://github.com/infuriating"}>
+          <Link href={"https://github.com/infuriating"} target="_blank">
             <Image
               src={"images/socials/github.svg"}
               alt="Github"
@@ -28,7 +28,7 @@ export default function Footer() {
             ></Image>
           </Link>
         </div>
-        <Link href={"https://linktr.ee/infuriating"}>
+        <Link href={"https://linktr.ee/infuriating"} target="_blank">
           <p className="mr-6 md:mr-16">linktree</p>
         </Link>
       </div>
